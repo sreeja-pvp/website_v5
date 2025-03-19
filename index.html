@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+ <!-- <script src="./bootstrap/bootstrap.bundle.min.js"></script>
+  <link href="./bootstrap/bootstrap.min.css" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+  <title>CSE(DS)</title>
+
+  <link rel="stylesheet" href="./css/navbar.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/utilities.css">
+  <link rel="stylesheet" href="./css/internship.css">
+  <link rel="stylesheet" href="./css/quickLinks.css">
+
+  <link rel="stylesheet" href="./css/aboutTabs.css">
+  <script src="./js/toggleReadMore.js"></script>
+  
+</head>
+
+<body>
+  <!-- Image Section -->
+  <section id="images">
+    <img src="./images/ds.png" alt="Header Image" class="img-fluid">
+  </section>
+
+  <section class="navSection">
+    <nav class="navbar navbar-expand-lg custom-nav">
+      <div class="container-fluid">
+        <!-- Navbar Brand -->
+        <a class="navbar-brand text-black" href="https://www.pvpsiddhartha.ac.in/">PVPSIT</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+            <!--<li class="nav-item"><a class="nav-link" href="././pages/about.html">About</a></li>-->
+            <!-- Academics -->
+            <li class="nav-item ml-3 dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="academicsDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Academics
+              </a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">Syllabus</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="./pages/syllabus_pvp23.html">PVP23</a></li>
+                    <li><a class="dropdown-item" href="./pages/syllabus_pvp20.html">PVP20</a></li>
+                    
+                  </ul>
+                </li>
+
+
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">Regulations</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="./pdfs/regulations/academic_regulations_20.pdf">PVP20</a></li>
+                    <li><a class="dropdown-item" href="#">PVP23</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">Academic Calendar</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="./pdfs/Academic_Calendars/PVP23_IIB.Tech-AC-2024-25.pdf">II
+                        Year</a></li>
+                    <li><a class="dropdown-item" href="./pdfs/Academic_Calendars/PVP20_IIIB.Tech-AC-2024-25.pdf">III
+                        Year</a></li>
+                    <li><a class="dropdown-item" href="#">IV Year</a></li>
+                  </ul>
+                </li>
+                <!--<li><a class="dropdown-item" href="#">PO's PEO's PSO's</a></li>-->
+                <li><a class="dropdown-item" href="./pages/BOS.html">BOS</a></li>
+
+              </ul>
+            </li>
+
+            <!-- Faculty -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="facultyDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Faculty
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./pages/TeachingStaff.html">Teaching Staff</a></li>
+                <li><a class="dropdown-item" href="./pages/NonTeachingStaff.html">Non-Teaching Staff</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Achievements</a></li>
+              </ul>
+            </li>
+
+            <!-- Research -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="researchDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Research
+              </a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">Publications</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="./pages/Journals.html">Journals</a></li>
+                    <li><a class="dropdown-item" href="#">Conferences</a></li>
+                    <li><a class="dropdown-item" href="#">Books</a></li>
+                    <li><a class="dropdown-item" href="#">Book Chapters</a></li>
+                  </ul>
+                </li>
+               
+                <li><a class="dropdown-item" href="#">Projects</a></li>
+                <li><a class="dropdown-item" href="#">Patents</a></li>
+               
+              </ul>
+            </li>
+
+            <!-- Students -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="studentsDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Students
+              </a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">Time Tables</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">II Year</a></li>
+                    <li><a class="dropdown-item" href="./pdfs/Time_Tables/III-II Time Table (Data Science).pdf">III
+                        Year</a></li>
+                    <li><a class="dropdown-item" href="#">IV Year</a></li>
+                  </ul>
+                </li>
+                <li><a class="dropdown-item" href="#">Question Papers</a></li>
+                <li><a class="dropdown-item" href="./pdfs/DS_MentorList.pdf">Mentoring List</a></li>
+                <li><a class="dropdown-item" href="#">Publications</a></li>
+                <li><a class="dropdown-item" href="#">Projects/Chapters</a></li>
+                <li><a class="dropdown-item" href="#">Activities</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Higher Studies</a></li>
+              </ul>
+            </li>
+
+            <!-- Internships -->
+            <li class="nav-item ml-3 dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="academicsDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Internships
+              </a>
+              <ul class="dropdown-menu">
+
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">PVP23</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">II Year</a></li>
+                    <li><a class="dropdown-item" href="#">III Year</a></li>
+                    <li><a class="dropdown-item" href="#">IV Year</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">PVP20</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">II
+                        Year</a></li>
+                    <li><a class="dropdown-item" href="#">III
+                        Year</a></li>
+                    <li><a class="dropdown-item" href="#">IV Year</a></li>
+                  </ul>
+                </li>
+
+              </ul>
+            </li>
+            <!-- Certifications -->
+            <li class="nav-item ml-3 dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="academicsDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Certifications
+              </a>
+              <ul class="dropdown-menu">
+
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">PVP23</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">II Year</a></li>
+                    <li><a class="dropdown-item" href="#">III Year</a></li>
+                    <li><a class="dropdown-item" href="#">IV Year</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">PVP20</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">II
+                        Year</a></li>
+                    <li><a class="dropdown-item" href="#">III
+                        Year</a></li>
+                    <li><a class="dropdown-item" href="#">IV Year</a></li>
+                  </ul>
+                </li>
+
+              </ul>
+            </li>
+            <!-- Results -->
+            <li class="nav-item ml-3 dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="academicsDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Results
+              </a>
+              <ul class="dropdown-menu">
+
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">PVP23</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">II Year</a></li>
+                    <li><a class="dropdown-item" href="#">III Year</a></li>
+                    <li><a class="dropdown-item" href="#">IV Year</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">PVP20</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">II
+                        Year</a></li>
+                    <li><a class="dropdown-item" href="#">III
+                        Year</a></li>
+                    <li><a class="dropdown-item" href="#">IV Year</a></li>
+                  </ul>
+                </li>
+
+              </ul>
+            </li>
+
+            <!-- Media -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="mediaDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Media
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Facebook</a></li>
+                <li><a class="dropdown-item" href="#">Instagram</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Events</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </section>
+  <div id="content">
+    <section class="marqueeSection">
+      <div class="marquee-container">
+        <marquee behavior="scroll" direction="left">
+          🔔 New Update Available!
+          <a href="#" target="_blank">Click here to view the full details.</a>
+        </marquee>
+    </section>
+
+    <div class="container-fluid">
+      <div class="row">
+        <!-- First Partition (75%) -->
+        <div class="col-md-8">
+          <div class="container mt-4" style="max-width: 1280px;">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item slide1 active">
+                </div>
+                <div class="carousel-item slide2">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Second Partition (25%) -->
+        <div class="col-md-4">
+          <div class="notification-container">
+            <h5 class="text">Notifications</h5>
+            <ul class="notification-list">
+
+              <li> <a href="#">Notification 1</a></li>
+              <li> Notification 2</li>
+              <li> Notification 3</li>
+              <li> Notification 4</li>
+              <li> Notification 5</li>
+              <li> Notification 6</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col" id="aboutNav">
+      <section id="nav-tab">
+        <ul class="nav nav-tabs justify-content-left" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="about-tab" data-bs-toggle="tab" data-bs-target="#about" type="button"
+              role="tab" aria-controls="about" aria-selected="true">About</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="vision-tab" data-bs-toggle="tab" data-bs-target="#vision" type="button"
+              role="tab" aria-controls="vision" aria-selected="false">Vision</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="mission-tab" data-bs-toggle="tab" data-bs-target="#mission" type="button"
+              role="tab" aria-controls="mission" aria-selected="false">Mission</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="po-tab" data-bs-toggle="tab" data-bs-target="#po" type="button" role="tab"
+              aria-controls="po" aria-selected="false">PO's</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="peo-tab" data-bs-toggle="tab" data-bs-target="#peo" type="button" role="tab"
+              aria-controls="peo" aria-selected="false">PEO's</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pso-tab" data-bs-toggle="tab" data-bs-target="#pso" type="button" role="tab"
+              aria-controls="pso" aria-selected="false">PSO's</button>
+          </li>
+        </ul>
+        <div class="tab-content custom-tab" id="myTabContent">
+
+          <div class="tab-pane fade show active" id="about" role="tabpanel" aria-labelledby="about-tab">
+            <p style="font-size:18px;"><b>B.Tech in Computer Science and Engineering (Data Science)</b> is a four-year
+              undergraduate
+              program that started
+              with an intake of 60 in 2022 and combines the study of traditional computer science with
+              the principles and
+              techniques of data science.
+            </p>
+            <p style="font-size:18px;">
+              The program typically covers a broad range of topics in computer science, including data
+              structures,
+              algorithms, problem-solving techniques, programming languages, operating systems, and
+              computer networks.
+              In addition, the program may include courses on Data Science and Machine Learning (ML)
+              topics such as
+              statistical analysis, data visualization, database systems, data mining, data analytics,
+              big data technologies, machine learning algorithms, business intelligence, and more.
+            </p>
+            <p style="font-size:18px;">
+              Graduates of this program may work in various industries, including technology, finance,
+              healthcare, retail, transportation, manufacturing, energy, agriculture, marketing,
+              cyber-security, government and more. Opportunities like data scientists, machine
+              learning engineers, business intelligence analysts, data engineers, software developers,
+              or other roles involve designing and implementing intelligent systems. They may also
+              pursue further studies in post-graduate programs in Data Science, AI, ML or related
+              fields.
+            </p>
+            <div id="moreContent" style="display: none;">
+              <p>
+                Some of the industries where data scientists are in high demand include:
+              <ol type="1">
+                <li><b>Technology:</b> Technology companies, such as Facebook, Apple, Amazon, Netflix,
+                  Google,
+                  and other top tech companies, hire data scientists to work on various projects,
+                  including search algorithms, advertising systems, and recommendation engines.
+                </li>
+                <li>
+                  <b>Finance:</b> Financial institutions such as banks, hedge funds, and insurance
+                  companies
+                  use data science to support decision-making, detect fraud, predict customer
+                  behaviour and develop new financial products.
+                </li>
+                <li>
+                  <b>Healthcare:</b> Data scientists in healthcare are working on areas such as
+                  precision medicine, drug development, patient outcomes analysis, and medical imaging
+                  analysis.
+                </li>
+                <li>
+                  <b>Retail:</b> Retail companies use data science to analyze customer behaviour and
+                  sales data to improve marketing and inventory management, forecast demand and
+                  optimize pricing.
+                </li>
+                <li>
+                  <b>Manufacturing and Automotive:</b> Companies in these industries use data science
+                  for predictive maintenance, quality control and optimizing their supply chains
+                </li>
+                <li>
+                  <b> Energy and utilities:</b> Companies in this field use data science to optimize
+                  power generation, transmission, and distribution.
+                </li>
+                <li>
+                  <b>Consulting:</b> Data Science consulting companies work with clients from diverse
+                  fields, helping them to leverage data to improve their business operations and
+                  strategies.
+                </li>
+                <li>
+                  <b>Government and non-profit:</b>Data science is also applied in government and
+                  non-profit organizations for areas like policy-making, budget allocation and public
+                  welfare.
+                </li>
+                <li>
+                  <b>Media and Advertising:</b> Companies in media and advertising use data science to
+                  understand customer preferences and make better ad placement and targeting
+                  decisions.
+                </li>
+                <li><b>Cyber security:</b> Companies and organizations that provide cyber security
+                  solutions use data science techniques to protect against data breaches,
+                  cyber-attacks and data theft.</li>
+              </ol>
+              </p>
+            </div>
+            <button id="readMoreButton" onclick="toggleReadMore(this)">Read More</button>
+          </div>
+          <div class="tab-pane fade" id="vision" role="tabpanel" aria-labelledby="vision-tab">
+            <p id="style_vision_mision">
+              To provide rich ambience for Academic and Professional Excellence, Research, <br>Employ
+              -
+              ability skills, Entrepreneurship, and Social responsibility.
+            </p>
+          </div>
+          <div class="tab-pane fade" id="mission" role="tabpanel" aria-labelledby="mission-tab">
+            <p id="style_vision_mision">
+              To empower the students with technical knowledge, Awareness of up-to-date technical
+              trends, Inclination for research in the areas of human needs, Capacity building for
+              Employment / Entrepreneurship, and Application of technology for societal needs.</p>
+          </div>
+          <div class="tab-pane fade" id="po" role="tabpanel" aria-labelledby="po-tab">
+
+            <div id="style_po_peo_pso">PROGRAM OUTCOMES (POs)</div>
+
+            <div class="row">
+              <div class="col-sm-1">
+                <div id="p_head">PO-1</div>
+              </div>
+              <div class="col-sm-9">
+                <div> <b>Engineering Knowledge:</b>
+                  Apply the knowledge of mathematics, science, engineering
+                  fundamentals, and an engineering specialization to the solution of complex
+                  engineering problems.
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-sm-1">
+                  <div id="p_head">PO-2</div>
+                </div>
+                <div class="col-sm-9">
+                  <div> <b>Problem Analysis:</b>
+                    Identify, formulate, review research literature, and analyze complex engineering
+                    problems reaching substantiated conclusions using first principles of mathematics,
+                    natural sciences and engineering sciences.
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-1">
+                  <div id="p_head">PO-3</div>
+                </div>
+                <div class="col-sm-9">
+                  <b>Design/Development of Solutions:</b>
+                  Design solutions for complex engineering problems and design system components or
+                  processes that meet the specified needs with appropriate consideration for the
+                  public health and safety, and the cultural, societal, and environmental
+                  considerations.
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-1">
+                <div id="p_head">PO-4</div>
+              </div>
+              <div class="col-sm-9">
+                <b>Conduct Investigations of Complex Problems:</b>
+                Use research-based knowledge and research methods including design of experiments,
+                analysis and interpretation of data, and synthesis of the information to provide
+                valid conclusions for complexproblems:
+                <ul>
+                  <li>that cannot be solved by straightforward application of knowledge,
+                    theories and techniques applicable to the engineering discipline as against
+                    problems given at the end of chapters in a typical text book that can be
+                    solved using simple engineering theories and techniques;
+                  </li>
+                  <li>
+                    that may not have aunique solution. Forexample, adesign problem can be
+                    solved in many ways and lead to multiple possible solutions;
+                  </li>
+                  <li>
+                    that require consideration of appropriate constraints / requirements not
+                    explicitly given in the problem statement such as cost, power requirement,
+                    durability, product life, etc.;
+                  </li>
+                  <li>
+                    which need to be defined (modeled) within appropriate mathematical
+                    framework; and
+                  </li>
+                  <li>
+                    that often require use of modern computational concepts and tools, for
+                    example, in the design of an antenna or a DSP filter.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div id="moreContent" style="display: none;">
+              <div class="row">
+                <div class="col-sm-1">
+                  <div id="p_head">PO5</div>
+                </div>
+                <div class="col-sm-9">
+                  <div> <b>Modern Tool Usage:</b>
+                    Create, select, and apply appropriate techniques, resources, and modern
+                    engineering and IT tools including prediction and modeling to complex engineering
+                    activities with an understanding of the limitations.
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-sm-1">
+                  <div id="p_head">PO6</div>
+                </div>
+                <div class="col-sm-9">
+                  <div> <b>The Engineer and Society: </b>
+                    Apply reasoning informed by the contextual knowledge to assess societal, health,
+                    safety, legal and cultural issues and the consequent responsibilities relevant to
+                    the professional engineering practice.
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="row">
+                <div class="col-sm-1">
+                  <div id="p_head">PO7</div>
+                </div>
+                <div class="col-sm-9">
+                  <div> <b>Environment and Sustainability: </b>
+                    Understand the impact of the professional engineering solutions in societal and
+                    environmental contexts, and demonstrate the knowledge of, and need for sustainable
+                    development.
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-sm-1">
+                  <div id="p_head">PO8</div>
+                </div>
+                <div class="col-sm-9">
+                  <div> <b>Ethics: </b>
+                    Apply ethical principles and commit to professional ethics and responsibilities and
+                    norms of the engineering practice.
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="row">
+                <div class="col-sm-1">
+                  <div id="p_head">PO9</div>
+                </div>
+                <div class="col-sm-9">
+                  <div> <b>Individual and Team Work: </b>
+                    Function effectively as an individual, and as a member or leader in diverse teams,
+                    and in multidisciplinary settings.
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="row">
+                <div class="col-sm-1">
+                  <div id="p_head">PO10</div>
+                </div>
+                <div class="col-sm-9">
+                  <div> <b>Communication: </b>
+                    Communicate effectively on complex engineering activities with the engineering
+                    community and with society at large, such as, being able to comprehend and write
+                    effective reports and design documentation, make effective presentations,
+                    andgiveandreceive clear instructions.
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-sm-1">
+                  <div id="p_head">PO11</div>
+                </div>
+                <div class="col-sm-9">
+                  <div> <b>Project Management and Finance:</b>
+                    Demonstrate knowledge and understanding of the engineering and management
+                    principles and apply these to one’s own work, as a member and leader in a team, to
+                    manage projects and in multidisciplinary environments
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="row">
+                <div class="col-sm-1">
+                  <div id="p_head">PO12</div>
+                </div>
+                <div class="col-sm-9">
+                  <div> <b>Life-long Learning: </b>
+                    Recognize the need for, and have the preparation and ability to engage in
+                    independent and lifelong learning in the broadest context of technological change.
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button id="readMoreButton" onclick="toggleReadMore(this)">Read More</button>
+
+
+
+
+          </div>
+          <div class="tab-pane fade" id="peo" role="tabpanel" aria-labelledby="peo-tab">
+            <div id="style_po_peo_pso">PROGRAM EDUCTIONAL OUTCOMES (PEOs)</div>
+            <div class="row">
+              <div class="col-sm-1">
+                <div id="p_head">PEO-1</div>
+              </div>
+              <div class="col-sm-9 peo">
+                <div>The graduates of the program will excel in the concepts of basic engineering and advanced
+                  concepts of computer science engineering.</div>
+
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-1">
+                <div id="p_head">PEO-2</div>
+              </div>
+              <div class="col-sm-9 peo">
+                <div>The graduates of the program will be professional in computing industry or pursuing higher
+                  studies.</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-1">
+                <div id="p_head">PEO-3</div>
+              </div>
+              <div class="col-sm-9 peo">
+                <div>The graduates of the program will excel in team work, ethics, communication skills and contribute
+                  to the benefit to the society.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="pso" role="tabpanel" aria-labelledby="pso-tab">
+            <div id="style_po_peo_pso">PROGRAM SPECIFIC OUTCOMES (PEOs)</div>
+
+            <div class="row">
+              <div class="col-sm-1">
+                <div id="p_head">PSO-1</div>
+              </div>
+              <div class="col-sm-9 pso">
+                <div>Apply the Knowledge of Computing Skills in building the Software Systems that meet the
+                  requirements of Industry and Society.</div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-1">
+                <div id="p_head">PSO-2</div>
+              </div>
+              <div class="col-sm-9 pso">
+                <div>Apply the Knowledge of Data Engineering and Communication Technologies for Developing
+                  Applications in the Domain of Smart and Intelligent Computing.</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section id="utilities">
+      <div class="container-fluid">
+        <!-- Utilities Section -->
+        <div id="utilities" class="card custom-card mx-auto ">
+          <div class="card-body text-center">
+            <!-- Utilities Heading Outside the Card -->
+            <div class="utilities-heading">
+              <h5 class="card-title">Facilities (Our Assets)</h5>
+              <p class="card-text"></p>
+            </div>
+
+            <!-- Utilities Data Display in Grid -->
+            <div class="row">
+              <div class="col-md-4">
+                <div class="utility-card">
+                  <img src="/images/Application_development.jpg" alt="App Dev Logo">
+                  <div>
+                    <h6 class="utility-title">Application Development</h6>
+                    <p class="utility-details">Design and develop modern applications. Focus on full-stack
+                      development.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="utility-card">
+                  <img src="/images/programming_languages.jpg" alt="Programming Lab Logo">
+                  <div>
+                    <h6 class="utility-title">Programming Languages Lab</h6>
+                    <p class="utility-details">Master various programming paradigms. Enhance coding
+                      efficiency.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="utility-card">
+                  <img src="/images/Data_Visualization_Tools_Logo.jpeg" alt="Data Viz Logo">
+                  <div>
+                    <h6 class="utility-title">Data Visualization Tools</h6>
+                    <p class="utility-details">Turn data into insights with visuals. Learn tools like
+                      Tableau and Power BI.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-4">
+                <div class="utility-card">
+                  <img src="/images/DeepLearning.png" alt="Deep Learning Lab Logo">
+                  <div>
+                    <h6 class="utility-title">Deep Learning Lab</h6>
+                    <p class="utility-details">Focus on neural networks and AI. Work on real-world AI
+                      projects.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="utility-card">
+                  <img src="/images/NLP_1.png" alt="NLP Lab Logo">
+                  <div>
+                    <h6 class="utility-title">NLP Lab</h6>
+                    <p class="utility-details">Explore natural language processing. Build intelligent
+                      language models.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="utility-card">
+                  <img src="/images/Database.jpg" alt="Database Systems Lab Logo">
+                  <div>
+                    <h6 class="utility-title">Database Systems Lab</h6>
+                    <p class="utility-details">Learn database design and management. Master SQL and NoSQL
+                      systems.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-4">
+                <div class="utility-card">
+                  <img src="/images/skill-development.png" alt="Skill Development Logo">
+                  <div>
+                    <h6 class="utility-title">Skill Development</h6>
+                    <p class="utility-details">Collaborate on innovative team projects. Enhance
+                      problem-solving skills.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="utility-card">
+                  <img src="/images/fswd.jpeg" alt="Full Stack Dev Logo">
+                  <div>
+                    <h6 class="utility-title">Full Stack Web Development</h6>
+                    <p class="utility-details">Build responsive websites and web applications using modern
+                      technologies.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+   
+  </div>
+  <div class="footer">
+    Quick Links
+  </div>
+  <div class="container mt-4">
+    <div class="row">
+      <!-- Column 1 -->
+      <div class="col-md-2">
+        <div class="column-title">Menu</div>
+        <ul class="list-unstyled">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">Department</a></li>
+          <li><a href="#">Placements</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Login</a></li>
+        </ul>
+      </div>
+      <!-- Column 2 -->
+      <div class="col-md-2">
+        <div class="column-title">Academic</div>
+        <ul class="list-unstyled">
+          <li><a href="#">NAAC</a></li>
+          <li><a href="#">Audit Statements</a></li>
+          <li><a href="#">Service Rules</a></li>
+          <li><a href="#">Code of Conduct</a></li>
+          <li><a href="#">Core Values</a></li>
+          <li><a href="#">MoU's</a></li>
+          <li><a href="#">Academic Council Minutes</a></li>
+        </ul>
+      </div>
+      <!-- Column 3 -->
+      <div class="col-md-2">
+        <div class="column-title">Governance</div>
+        <ul class="list-unstyled">
+          <li><a href="#">Governing-Body Minutes</a></li>
+          <li><a href="#">Autonomous Status</a></li>
+          <li><a href="#">UGC</a></li>
+          <li><a href="#">AICTE Approvals</a></li>
+          <li><a href="#">Feedback Reports</a></li>
+          <li><a href="#">Student Council</a></li>
+          <li><a href="#">PVP Gallery</a></li>
+        </ul>
+      </div>
+      <!-- Column 4 -->
+      <div class="col-md-3">
+        <div class="column-title">Contact</div>
+        <address class="address">
+          <p>P.V.P. Siddhartha Institute Of Technology</p>
+          <p>Kanuru, Vijayawada-520 007</p>
+          <p>Andhra Pradesh, India</p>
+          <p>Tel: 0866-2581699, 0866-2583037</p>
+          <p>0866-2585681, 0866-2585682</p>
+          <p>Email: <a href="mailto:principal@pvpsiddhartha.ac.in">principal@pvpsiddhartha.ac.in</a></p>
+          <p>Fax: 0866-2581184</p>
+        </address>
+      </div>
+      <!-- Column 5 -->
+      <div class="col-md-3">
+        <div class="column-title">Location</div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1477.5755701352762!2d80.6937307918935!3d16.489628803428683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35fb15c517ccab%3A0xdfb750019250eb16!2sPVP%20Siddhartha%20Engineering%20College%20Rd%2C%20Vijayawada%2C%20Andhra%20Pradesh%20520007!5e0!3m2!1sen!2sin!4v1733372616130!5m2!1sen!2sin"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </iframe>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>

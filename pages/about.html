@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B.Tech in CSE (Data Science)</title>
+     
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+
+    <link rel="stylesheet" href="./css/navbar.css">
+
+    <style>
+        .section-header {
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: rgb(88, 152, 209);
+        }
+
+        .industry-list li {
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            padding-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Image Section -->
+    <section id="/images/">
+        <img src="./images/Data_Science_Logo.jpeg" alt="Header Image" class="img-fluid">
+    </section>
+
+    <section class="navSection">
+        <nav class="navbar navbar-expand-lg custom-nav">
+            <div class="container-fluid">
+                <!-- Navbar Brand -->
+                <a class="navbar-brand text-black" href="https://www.pvpsiddhartha.ac.in/">PVPSIT</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./pages/about.html">About</a></li>
+                        <!-- Academics -->
+                        <li class="nav-item ml-3 dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="academicsDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Academics
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Curriculum</a></li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#">Regulations</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item"
+                                                href="./pdfs/regulations/academic_regulations_20.pdf">PVP20</a></li>
+                                        <li><a class="dropdown-item" href="#">PVP23</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#">Academic Calendar</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item"
+                                                href="./pdfs/Academic_Calendars/PVP23_IIB.Tech-AC-2024-25.pdf">II
+                                                Year</a></li>
+                                        <li><a class="dropdown-item"
+                                                href="./pdfs/Academic_Calendars/PVP20_IIIB.Tech-AC-2024-25.pdf">III
+                                                Year</a></li>
+                                        <li><a class="dropdown-item" href="#">IV Year</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="dropdown-item" href="#">PO's PEO's PSO's</a></li>
+                                <li><a class="dropdown-item" href="#">BOS</a></li>
+                                <li><a class="dropdown-item" href="#">Holidays</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Faculty -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="facultyDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Faculty
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Teaching Staff</a></li>
+                                <li><a class="dropdown-item" href="#">Non-Teaching Staff</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Achievements</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Research -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="researchDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Research
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Journals</a></li>
+                                <li><a class="dropdown-item" href="#">Publications</a></li>
+                                <li><a class="dropdown-item" href="#">Projects</a></li>
+                                <li><a class="dropdown-item" href="#">Patents</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Students -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="studentsDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Students
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#">Time Tables</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">II Year</a></li>
+                                        <li><a class="dropdown-item"
+                                                href="./pdfs/Time_Tables/III-II Time Table (Data Science).pdf">III
+                                                Year</a></li>
+                                        <li><a class="dropdown-item" href="#">IV Year</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="dropdown-item" href="#">Question Papers</a></li>
+                                <li><a class="dropdown-item" href="#">Mentoring List</a></li>
+                                <li><a class="dropdown-item" href="#">Publications</a></li>
+                                <li><a class="dropdown-item" href="#">Projects/Chapters</a></li>
+                                <li><a class="dropdown-item" href="#">Activities</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Higher Studies</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Other Links -->
+                        <li class="nav-item"><a class="nav-link" href="#">Certifications</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./pages/internship.html">Internships</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Results</a></li>
+
+                        <!-- Media -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="mediaDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Media
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Facebook</a></li>
+                                <li><a class="dropdown-item" href="#">Instagram</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Events</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <div class="container">
+        <header class="text-center mb-5">
+            <h3 class="display-6">B.Tech in Computer Science and Engineering (Data Science)</h3>
+            <p class="text-muted">A comprehensive four-year undergraduate program</p>
+        </header>
+
+        <section>
+            <h2 class="section-header">Vision</h2>
+            <p>To be a centre of excellence in academics and research in Computer Science and Engineering and take up
+                challenges for the benefit of society.
+            </p>
+        </section>
+        <section>
+            <h2 class="section-header">Mission</h2>
+            <p>
+            <ul>
+                <li>Impart professional education through best curriculum in harmony with the industry needs.</li>
+                <li>Inculcate ethics, research capabilities and team work in the young minds so as to put efforts to the
+                    advancement of the nation.</li>
+                <li> Strive for student achievement and success with leadership qualities and preparing them for
+                    continuous learning in the global environment.</li>
+            </ul>
+
+
+            </p>
+        </section>
+        <!-- About the Program Section -->
+        <section>
+            <h2 class="section-header">About the Program</h2>
+            <p>
+                B.Tech in Computer Science and Engineering (Data Science) combines traditional computer science
+                principles with data science techniques.
+                The program covers a range of topics including data structures, algorithms, programming languages,
+                operating systems, computer networks, and Data Science topics such as statistical analysis, data
+                visualization, big data technologies, and machine learning.
+            </p>
+        </section>
+
+        <!-- Hands-on Experience Section -->
+        <section>
+            <h2 class="section-header">Practical Learning Opportunities</h2>
+            <p>
+                The program emphasizes experiential learning through lab work, internships, capstone projects, and
+                research. Students gain practical experience working with real-world datasets and utilizing advanced
+                data science tools and techniques.
+            </p>
+        </section>
+
+        <!-- Career Opportunities Section -->
+        <section>
+            <h2 class="section-header">Career Opportunities</h2>
+            <p>
+                Graduates can pursue careers in various industries, including technology, finance, healthcare, retail,
+                and more. Roles include:
+            </p>
+            <ul>
+                <li>Data Scientist</li>
+                <li>Machine Learning Engineer</li>
+                <li>Business Intelligence Analyst</li>
+                <li>Data Engineer</li>
+                <li>Software Developer</li>
+            </ul>
+            <p>Graduates can also opt for postgraduate studies in Data Science, AI, ML, or related fields.</p>
+        </section>
+
+        <!-- Industries Section -->
+        <section>
+            <h2 class="section-header">Industries in Demand</h2>
+            <p>Data scientists are in high demand across various industries, including:</p>
+            <ul class="industry-list">
+                <li><strong>Technology:</strong> Companies like Facebook, Apple, Amazon, Netflix, and Google use data
+                    science for algorithms, advertising systems, and recommendation engines.</li>
+                <li><strong>Finance:</strong> Banks and insurance companies use data science for fraud detection and
+                    customer behavior analysis.</li>
+                <li><strong>Healthcare:</strong> Data science is applied in precision medicine, drug development, and
+                    medical imaging.</li>
+                <li><strong>Retail:</strong> Retailers use data for demand forecasting, inventory management, and
+                    pricing optimization.</li>
+                <li><strong>Manufacturing:</strong> Data science helps with predictive maintenance and supply chain
+                    optimization.</li>
+                <li><strong>Energy:</strong> Applied in power generation and distribution optimization.</li>
+                <li><strong>Consulting:</strong> Consulting firms help businesses leverage data to enhance operations.
+                </li>
+                <li><strong>Government:</strong> Governments use data science for policymaking and budget allocation.
+                </li>
+                <li><strong>Cybersecurity:</strong> Protecting against cyber-attacks and data breaches.</li>
+                <li><strong>Media and Advertising:</strong> Understanding customer preferences and optimizing ad
+                    placements.</li>
+            </ul>
+        </section>
+        
+    </div>
+
+
+</body>
+
+</html>
