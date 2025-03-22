@@ -22,12 +22,13 @@ body{
     height: 450px;
 }
 
-.carousel-item.slide1 {
+.carousel-item.slide1  {
     background-color: grey;
 }
 
-.carousel-item.slide2 {
-    background-color: lightcoral;
+.carousel-item.slide2 img {
+    width: 100%;
+    height: 100%;
 }
 
 /* Notification feed styling */
